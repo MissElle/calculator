@@ -1,5 +1,5 @@
-var dataInput = document.calcnumbers.numbersinput.value;
-//var x = parseInt(dataInput, 10);
+var dataInput = document.compute.calculate.value;
+var element = Number(dataInput);
 var numCount = document.getElementById('count');
 var numSum = document.getElementById('sum');
 var numMean = document.getElementById('mean');
@@ -8,10 +8,10 @@ var subCount = [];
 var subSum = 0; 
 var starColors = ['#51fffc', '#ffff96', '#96ffc7', '#f8d8ff', '#d2bfff', '#ffbfbf', '#ffd299', '#ffffff', '#000000'];
  
-function calcData(dataInput) {
-  if(typeof dataInput == 'number') { 
-    console.log(dataInput);
-    subCount.push(dataInput);
+function calcData(element) {
+  if(typeof element === 'number') {
+    console.log(element);
+    subCount.push(element);
     var starDiv = document.createElement('div');
     starDiv.className = 'star';
     var starHolder = document.getElementById('star-holder');
@@ -26,7 +26,7 @@ function calcData(dataInput) {
     }
   }else {
     numCount.innerHTML = 'Not a Number';
-    console.log(dataInput);
+    console.log(element);
   }
   subSum = 0;
   event.preventDefault();
