@@ -59,13 +59,9 @@ div.typevalue>h4 {font-size: 3vh;}
 div.numbervalue>p {font-size: 5.5vh; text-indent: .7em;}
  
 @media all and (max-width: 28em) {
-div.typevalue>h4 {font-size: 5.3vw;}
-div.numbervalue>p {font-size: 10vw;}
-h1{font-size: 9.5vw;}
-}
- 
-@media all and (max-width: 25em) {
-.numbervalue {justify-content: space-around;}
+  
+  div.typevalue>h4 {font-size: 5.3vw;}
+  div.numbervalue>p {font-size: 10vw;}
 }
  
 input[type="number"] {
