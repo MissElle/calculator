@@ -1,5 +1,3 @@
-var dataInput = document.compute.calculate.value;
-var element = Number(dataInput);
 var numCount = document.getElementById('count');
 var numSum = document.getElementById('sum');
 var numMean = document.getElementById('mean');
@@ -9,6 +7,8 @@ var subSum = 0;
 var starColors = ['#51fffc', '#ffff96', '#96ffc7', '#f8d8ff', '#d2bfff', '#ffbfbf', '#ffd299', '#ffffff', '#000000'];
  
 function calcData(element) {
+  var dataInput = document.compute.calculate.value;
+  var element = Number(dataInput);
   if(typeof element === 'number') {
     console.log(element);
     subCount.push(element);
