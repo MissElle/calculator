@@ -9,8 +9,9 @@ var starColors = ['#51fffc', '#ffff96', '#96ffc7', '#f8d8ff', '#d2bfff', '#ffbfb
 function calcData(element) {
   var dataInput = document.compute.calculate.value;
   var element = Number(dataInput);
-  if(typeof element === 'number') {
-    console.log(element);
+  if (element == "") {
+    numCount.innerHTML = 'Not a Number';
+  }else if(typeof element === 'number') {
     subCount.push(element);
     var starDiv = document.createElement('div');
     starDiv.className = 'star';
@@ -26,7 +27,6 @@ function calcData(element) {
     }
   }else {
     numCount.innerHTML = 'Not a Number';
-    console.log(element);
   }
   subSum = 0;
   event.preventDefault();
