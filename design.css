@@ -2,7 +2,7 @@
  
 html {
   background-image: url(background.png); /*image courtesy of nasa - https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/pia18836-full.jpg?itok=0sFwNc9S*/
-  background-size: 100em;
+  background-size: cover;
   background-position: left top;
   background-repeat: no-repeat;
   overflow: hidden;
