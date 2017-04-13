@@ -9,9 +9,7 @@ var starColors = ['#51fffc', '#ffff96', '#96ffc7', '#f8d8ff', '#d2bfff', '#ffbfb
 function calcData(element) {
   var dataInput = document.compute.calculate.value;
   var element = Number(dataInput);
-  if (element == "") {
-    numCount.innerHTML = 'Not a Number';
-  }else if(typeof element === 'number') {
+  if(typeof element === 'number' || element === 0) {
     subCount.push(element);
     var starDiv = document.createElement('div');
     starDiv.className = 'star';
